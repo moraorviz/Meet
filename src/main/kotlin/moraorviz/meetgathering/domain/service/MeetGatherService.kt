@@ -16,10 +16,3 @@ class MeetGatherService(private val webClient: WebClient) {
                 .retrieve().bodyToFlux(Meet::class.java)
     }
 }
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class Meet(@JsonProperty("rsvp_id") val rsvpId: String = "", val group: Group = Group("", "", ""))
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class Group(@JsonProperty("group_id") val groupId: String = "", @JsonProperty("group_lon") val groupLon: String = "",
-                 @JsonProperty("group_lat") val groupLat: String = "")
