@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tweet-gathering" />
+        <module name="meet-gathering" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="tweet-gathering" target="1.8" />
+      <module name="meet-gathering" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
