@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
 import org.springframework.http.MediaType
 import reactor.core.publisher.Flux
-import org.springframework.stereotype.Service
 import org.springframework.web.reactive.function.client.WebClient
 
 class MeetGatherService(private val webClient: WebClient) {
